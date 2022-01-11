@@ -1,0 +1,25 @@
+networks:
+  default: development
+  development:
+    cmd: ganache-cli
+    host: http://127.0.0.1
+    timeout: 120
+    cmd_settings:
+      port: 8545
+      gas_limit: 30000000
+      accounts: 10
+      evm_version: istanbul
+      mnemonic: brownie
+      fork: mainnet
+dependencies:
+  - lidofinance/aave-protocol-v2@1.0.2-rc.1
+  - OpenZeppelin/openzeppelin-contracts@3.1.0
+compiler:
+  evm_version: istanbul
+  solc:
+    version: 0.6.12
+    optimizer:
+      enabled: true
+      runs: 200
+    remappings:
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.1.0"
