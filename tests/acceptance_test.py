@@ -40,7 +40,7 @@ def validate_asteth_impl(asteth_impl, lending_pool_address):
     assert asteth_impl.UNDERLYING_ASSET_ADDRESS() == lido.STETH_ADDRESS
     assert asteth_impl.RESERVE_TREASURY_ADDRESS() == aave.TREASURY_ADDRESS
     assert asteth_impl.POOL() == lending_pool_address
-    assert asteth_impl.name() == "Aave interest bearing stETH"
+    assert asteth_impl.name() == "Aave interest bearing StETH"
     assert asteth_impl.decimals() == 18
     assert asteth_impl.symbol() == "aStETH"
 
@@ -48,7 +48,7 @@ def validate_asteth_impl(asteth_impl, lending_pool_address):
 def validate_stable_debt_steth_impl(stable_debt_steth_impl, lending_pool_address):
     assert stable_debt_steth_impl.UNDERLYING_ASSET_ADDRESS() == lido.STETH_ADDRESS
     assert stable_debt_steth_impl.POOL() == lending_pool_address
-    assert stable_debt_steth_impl.name() == "Aave stable debt bearing stETH"
+    assert stable_debt_steth_impl.name() == "Aave stable debt bearing StETH"
     assert stable_debt_steth_impl.decimals() == 18
     assert stable_debt_steth_impl.symbol() == "stableDebtStETH"
 
@@ -56,6 +56,6 @@ def validate_stable_debt_steth_impl(stable_debt_steth_impl, lending_pool_address
 def validate_variable_debt_steth_impl(variable_debt_steth_impl, lending_pool_address):
     assert variable_debt_steth_impl.UNDERLYING_ASSET_ADDRESS() == lido.STETH_ADDRESS
     assert variable_debt_steth_impl.POOL() == lending_pool_address
-    assert variable_debt_steth_impl.name() == "Aave variable debt bearing stETH"
+    assert variable_debt_steth_impl.name() == "Aave variable debt bearing StETH"
     assert variable_debt_steth_impl.decimals() == 18
     assert variable_debt_steth_impl.symbol() == "variableDebtStETH"
