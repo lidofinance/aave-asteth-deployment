@@ -10,3 +10,7 @@ To run deployment use the command `DEPLOYER=<DEPLOYER_ACCOUNT> brownie run deplo
 - VariableDebtStETH.sol (SHA-256 hash: 0xa6461b9f089d5a8f64edef1d37523ddb11e2973f1ea2f2996961f61e83c5a969)
 - StableDebtStETH.sol (SHA-256 hash: 0x7e86a48c1d4b43a5e4ebca7d44704a6ef273a93ba049e9c1cd19cb512da12b98)
 - DefaultReserveInterestRateStrategy.sol (SHA-256 hash: 0x52e45a1e4d0969524a362cabb4370176303b62d511ba2321e95d37c49287fdab)
+
+## Tests
+
+To run the acceptance test use the command `brownie test -s`.
