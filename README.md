@@ -2,6 +2,21 @@
 
 The repository contains scripts for deployment and verification of the implementation of the StETH integration on AAVE.
 
+## Project Setup
+
+To use the tools provided by this project, please pull the repository from GitHub and install
+its dependencies as follows. It is recommended to use a Python virtual environment.
+
+```bash
+git clone https://github.com/lidofinance/aave-asteth-deployment
+cd aave-asteth-deployment
+python3 -m venv .venv
+source .venv/bin/activate
+pip3 install -r requirements-dev.txt
+```
+
+Note that for correct work of scripts you have to exact the "1.17.0" version of the eth-brownie package.
+
 ## Deployment
 
 To run deployment use the command `DEPLOYER=<DEPLOYER_ACCOUNT> brownie run deploy`. This command will deploy contracts required for StETH listing on AAVE:
