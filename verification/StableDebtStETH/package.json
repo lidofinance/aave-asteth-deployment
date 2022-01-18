@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "verify:mainnet": "hardhat verify --network mainnet $STABLE_DEBT_STETH_ADDRESS 0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9 0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84  \"Aave stable debt bearing StETH\" \"stableDebtStETH\" 0x0000000000000000000000000000000000000000",
+    "verify:goerli": "hardhat verify --network goerli $STABLE_DEBT_STETH_ADDRESS 0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9 0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84 \"Aave stable debt bearing StETH\" \"stableDebtStETH\" 0x0000000000000000000000000000000000000000"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@nomiclabs/hardhat-etherscan": "^2.1.8",
-    "@typechain/hardhat": "^2.3.1",
-    "@types/node": "^12.20.41",
     "dotenv": "^10.0.0",
     "hardhat": "^2.8.2",
     "ts-node": "^10.4.0",
