@@ -21,7 +21,7 @@ def main():
     tx_params = {"from": deployer, "max_fee": "100 gwei", "priority_fee": "2 gwei"}
 
     deploy_implementation_and_strategy(
-        lending_pool_address, tx_params, publish_source=config.get_is_live()
+        lending_pool_address, tx_params, publish_source=False
     )
 
 
