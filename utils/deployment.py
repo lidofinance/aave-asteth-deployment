@@ -21,8 +21,8 @@ def deploy_asteth_impl(lending_pool, steth, treasury, tx_params, publish_source=
         lending_pool,  # lending pool,
         steth,  # underlying asset
         treasury,  # treasury,
-        "Aave interest bearing StETH",
-        "aStETH",
+        "Aave interest bearing STETH",
+        "aSTETH",
         ZERO_ADDRESS,
         tx_params,
         publish_source=publish_source,
@@ -35,8 +35,8 @@ def deploy_variable_debt_steth_impl(
     return VariableDebtStETH.deploy(
         lending_pool,  # lending pool,
         steth,  # underlying asset
-        "Aave variable debt bearing StETH",
-        "variableDebtStETH",
+        "Aave variable debt bearing STETH",
+        "variableDebtSTETH",
         ZERO_ADDRESS,
         tx_params,
         publish_source=publish_source,
@@ -47,8 +47,8 @@ def deploy_stable_debt_steth_impl(lending_pool, steth, tx_params, publish_source
     return StableDebtStETH.deploy(
         lending_pool,  # lending pool,
         steth,  # underlying asset
-        "Aave stable debt bearing StETH",
-        "stableDebtStETH",
+        "Aave stable debt bearing STETH",
+        "stableDebtSTETH",
         ZERO_ADDRESS,
         tx_params,
         publish_source=publish_source,

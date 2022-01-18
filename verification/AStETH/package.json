@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "verify:mainnet": "hardhat verify --network mainnet $ASTETH_ADDRESS 0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9 0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84 0x464c71f6c2f760dda6093dcb91c24c39e5d6e18c \"Aave interest bearing StETH\" \"aStETH\" 0x0000000000000000000000000000000000000000",
-    "verify:goerli": "hardhat verify --network goerli $ASTETH_ADDRESS 0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9 0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84 0x464c71f6c2f760dda6093dcb91c24c39e5d6e18c \"Aave interest bearing StETH\" \"aStETH\" 0x0000000000000000000000000000000000000000"
+    "verify:mainnet": "hardhat verify --network mainnet $ASTETH_ADDRESS 0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9 0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84 0x464c71f6c2f760dda6093dcb91c24c39e5d6e18c \"Aave interest bearing STETH\" \"aSTETH\" 0x0000000000000000000000000000000000000000",
+    "verify:goerli": "hardhat verify --network goerli $ASTETH_ADDRESS 0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9 0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84 0x464c71f6c2f760dda6093dcb91c24c39e5d6e18c \"Aave interest bearing STETH\" \"aSTETH\" 0x0000000000000000000000000000000000000000"
   },
   "author": "",
   "license": "ISC",

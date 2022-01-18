@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "verify:mainnet": "hardhat verify --network mainnet $STABLE_DEBT_STETH_ADDRESS 0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9 0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84  \"Aave stable debt bearing StETH\" \"stableDebtStETH\" 0x0000000000000000000000000000000000000000",
-    "verify:goerli": "hardhat verify --network goerli $STABLE_DEBT_STETH_ADDRESS 0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9 0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84 \"Aave stable debt bearing StETH\" \"stableDebtStETH\" 0x0000000000000000000000000000000000000000"
+    "verify:mainnet": "hardhat verify --network mainnet $STABLE_DEBT_STETH_ADDRESS 0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9 0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84  \"Aave stable debt bearing STETH\" \"stableDebtSTETH\" 0x0000000000000000000000000000000000000000",
+    "verify:goerli": "hardhat verify --network goerli $STABLE_DEBT_STETH_ADDRESS 0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9 0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84 \"Aave stable debt bearing STETH\" \"stableDebtSTETH\" 0x0000000000000000000000000000000000000000"
   },
   "author": "",
   "license": "ISC",
