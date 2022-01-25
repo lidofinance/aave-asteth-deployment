@@ -12,7 +12,7 @@ networks:
       mnemonic: brownie
       fork: mainnet
 dependencies:
-  - lidofinance/aave-protocol-v2@1.0.2-rc.2
+  - lidofinance/aave-protocol-v2@1.0.2-rc.3
   - OpenZeppelin/openzeppelin-contracts@3.1.0
 compiler:
   evm_version: istanbul

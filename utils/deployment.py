@@ -3,7 +3,7 @@ from utils import aave, constants, helpers
 from utils.helpers import DependencyLoader
 
 
-AAVE_DEPENDENCY_NAME = "lidofinance/aave-protocol-v2@1.0.2-rc.2"
+AAVE_DEPENDENCY_NAME = "lidofinance/aave-protocol-v2@1.0.2-rc.3"
 
 
 AStETH = helpers.DependencyLoader.load(AAVE_DEPENDENCY_NAME, "AStETH")
