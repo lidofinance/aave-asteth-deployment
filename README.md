@@ -15,6 +15,12 @@ source .venv/bin/activate
 pip3 install -r requirements-dev.txt
 ```
 
+To run scripts and tests in this repo, store your project ID as an environment variable named WEB3_INFURA_PROJECT_ID. You can do so with the following command:
+
+```bash
+$ export WEB3_INFURA_PROJECT_ID=YourProjectID
+```
+
 Note that for correct work of scripts you have to have exact the "1.17.0" version of the eth-brownie package.
 
 ## Deployment
