@@ -32,6 +32,15 @@ To run deployment use the command `DEPLOYER=<DEPLOYER_ACCOUNT> brownie run deplo
 - StableDebtStETH.sol (SHA-256 hash: 0x7e86a48c1d4b43a5e4ebca7d44704a6ef273a93ba049e9c1cd19cb512da12b98)
 - DefaultReserveInterestRateStrategy.sol (SHA-256 hash: 0x52e45a1e4d0969524a362cabb4370176303b62d511ba2321e95d37c49287fdab)
 
+## Bytecode Checking
+
+To validate that bytecode of contracts deployed in the mainnet network matches the bytecode of contracts deployed via scripts from this repo, you can use the command `brownie run check_bytecode`. This command will do the next steps to validate the bytecode of the deployed contracts:
+
+1. Download bytecode of contracts deployed in the mainnet via JSON-RPC call to Ethereum node.
+2. Deploy contracts in the mainnet fork via scripts in this repo.
+3. Download bytecode of newly deployed contracts from the mainnet fork via JSON-RPC call.
+4. Compare that bytecode of previously and newly deployed contracts match.
+
 ## Tests
 
 To run the acceptance test use the command `brownie test -s`.
