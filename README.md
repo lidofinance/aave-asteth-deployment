@@ -39,7 +39,7 @@ To validate that bytecode of contracts deployed in the mainnet network matches t
 1. Download bytecode of contracts deployed in the mainnet via JSON-RPC call to Ethereum node.
 2. Deploy contracts in the mainnet fork via scripts in this repo.
 3. Download bytecode of newly deployed contracts from the mainnet fork via JSON-RPC call.
-4. Compare that bytecode of previously and newly deployed contracts match.
+4. Compare that bytecode of previously and newly deployed contracts match except ipfs hash in metadata section.
 
 ## Tests
 

@@ -58,7 +58,9 @@ def compare_bytecodes(actual, expected):
     print("Validating that bytecode of contracts matches...")
     is_all_matches = True
     for contract_name in actual.keys():
-        if actual[contract_name] == expected[contract_name]:
+        if compare_bytecode_except_ipfs_hash(
+            actual[contract_name], expected[contract_name]
+        ):
             print(f"  [OK] {contract_name}")
         else:
             print(f"  [Error!] {contract_name} bytecodes don't match!")
@@ -68,3 +70,25 @@ def compare_bytecodes(actual, expected):
         print("All contracts bytecode matches!", end="\n\n")
     else:
         print("The bytecode of some contracts doesn't match!", end="\n\n")
+
+
+def compare_bytecode_except_ipfs_hash(actual, expected):
+    actual_except_ipfs_hash = trunc_ipfs_hash(actual)
+    expected_except_ipfs_hash = trunc_ipfs_hash(expected)
+    return actual_except_ipfs_hash == expected_except_ipfs_hash
+
+
+def trunc_ipfs_hash(bytecode):
+    """
+    Truncates IPFS hash from metadata section in bytecode.
+    See https://docs.soliditylang.org/en/v0.6.12/metadata.html#encoding-of-the-metadata-hash-in-the-bytecode
+    """
+    ipfs_metadata_opcodes = "a264697066735822"  # 0xa2 0x64 'i' 'p' 'f' 's' 0x58 0x22 sequence of bytes between ipfs hash
+    ipfs_hash_length = 68  # 34 bytes
+    ipfs_metdata_opcodes_index = bytecode.index(ipfs_metadata_opcodes)
+    return (
+        bytecode[: ipfs_metdata_opcodes_index + len(ipfs_metadata_opcodes)]
+        + bytecode[
+            ipfs_metdata_opcodes_index + len(ipfs_metadata_opcodes) + ipfs_hash_length :
+        ]
+    )
